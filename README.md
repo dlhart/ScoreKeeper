@@ -1,5 +1,5 @@
 # ScoreKeeper
-A web application for keeping score during a card game, etc.
+A web application for keeping score during a card game, etc. created by [Dustin Hart](https://designsrdu.com).
 
 ## Synopsis
 
