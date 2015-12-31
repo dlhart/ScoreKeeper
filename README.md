@@ -1,9 +1,9 @@
 # ScoreKeeper
-A web application for keeping score during a card game, etc. created by [Dustin Hart](https://designsrdu.com).
+A web application for keeping score during a card game, etc. created by [Dustin Hart](http://designsrdu.com).
 
 ## Synopsis
 
-[ScoreKeeper](https://score3.designsrdu.com) is an object-oriented JavaScript web application that keeps track of scores during a game.  It supports two to six players.  Written in HTML5, CSS3, JavaScript, and JQuery.
+[ScoreKeeper](http://score3.designsrdu.com) is an object-oriented JavaScript web application that keeps track of scores during a game.  It supports two to six players.  Written in HTML5, CSS3, JavaScript, and JQuery.
 
 ## Usage
 
@@ -12,14 +12,14 @@ A link to the History page is displayed below the History section once a user ha
 
 ## Motivation
 
-This is the third iteration in a sequence of score keeping web applications that I have written.  The first was a horrible and rough version written in ASP.NET and C#.  I created the second version in poorly written JavaScript.  This was an improvement over the first version (it was much faster), but was hard to maintain and still had several issues on the mobile Safari browser.  Version 3 (this version) uses [FastClick](https://github.com/ftlabs/fastclick) in order to handle issues with the mobile Safari browser as well as uses <div>s instead of input buttons in order to solve some of these issues as well.  It is much more aesthetically appealing and fun to use.
+This is the third iteration in a sequence of score keeping web applications that I have written.  The first was a horrible and rough version written in ASP.NET and C#.  I created the second version in poorly written JavaScript.  This was an improvement over the first version (it was much faster), but was hard to maintain and still had several issues on the mobile Safari browser.  Version 3 (this version) uses [FastClick](http://github.com/ftlabs/fastclick) in order to handle issues with the mobile Safari browser as well as uses <div>s instead of input buttons in order to solve some of these issues as well.  It is much more aesthetically appealing and fun to use.
 
 
 ## API Reference
 
-[FastClick](https://github.com/ftlabs/fastclick)
+[FastClick](http://github.com/ftlabs/fastclick)
 
 
 ## Contributors
 
-Created by [Dustin Hart](https://designsrdu.com)
+Created by [Dustin Hart](http://designsrdu.com)
