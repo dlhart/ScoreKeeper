@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ScoreKeeper 3.0</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- 
+	Disables zoom (Do not want to do)
+	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> -->
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<!-- Google jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- End Google jQuery CDN -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic' rel='stylesheet' type='text/css'>
+	<script type='application/javascript' src='fastclick.js'></script>
+	<script src="script.js"></script>
+</head>
+<body>
+<div id="newGameBanner" onclick="octopus.newGame()" style="background-color: #9BD7D5; display: none; padding-top: 5px; padding-bottom: 5px; cursor: pointer">
+  	<h3 style="text-align: center; margin: 0px; color: #505050; font-size: 20px;">Click Here to</h3>
+  	<h3 style="text-align: center; margin: 0px; color: #505050; font-size: 20px;">Start a New Game</h3>
+</div>
+<section id="wrapper">	
+  <img src="scoreKeeperEven.png">
+  <div id="clear">
+	<article id="pg1">
+		<h2>Select the number of players:</h2>
+		<section id="playersSection">
+			<div class="btn btn-selected" value="2" id="2p">2</div>
+			<div class="btn" value="3" id="3p">3</div>
+			<div class="btn" value="4" id="4p">4</div>
+			<div class="btn" value="5" id="5p">5</div>
+			<div class="btn" value="6" id="6p">6</div>
+		<section>
+		<h2>Enter each player's name:</h2>
+		<section id="playersNames">
+		</section>
+		<br>
+		<div id="pg1Submit">Let's Play!</div>
+		<div id="loadPrev"></div>
+	</article>
+	<article id="pg2" style="display: none;">
+		<table id="scoreTable">
+			<tr>
+				<th>Names</th>
+				<th>Scores</th>
+				<!-- TenaScore -->
+			</tr>
+				<!--
+				id's are name0, score0, tena0
+						 name1, score1, tena1
+						 ...
+				-->
+		</table>
+		<br>
+		<div class="scoreBtn" id="negTen" onclick="octopus.changeTena(-10)">-10</div>
+		<div class="scoreBtn" id="negOne" onclick="octopus.changeTena(-1)">-1</div>
+		<div class="scoreBtn" id="posOne" onclick="octopus.changeTena(1)">+1</div>
+		<div class="scoreBtn" id="posTen" onclick="octopus.changeTena(10)">+10</div>
+		<br>
+		<br>
+		<div id="pg2Submit" onclick="octopus.submit()">Submit</div>
+	</article>
+	<article id="pg3" style="display: none">
+		<h3>History</h3>
+		<table id="hist">
+			<!-- <li>#name0 tena0</li> -->
+		</table>
+	</article>
+	<footer>
+	<br/><br><hr><br>
+	<a href="http://designsrdu.com" style="margin: auto;"><img src="sponsoredLogo.png" style="width: 150px; height: auto;" id="logo"></a>
+	</footer>
+  </div>
+</section>
+</body>
+</html>

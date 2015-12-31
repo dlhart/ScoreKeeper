@@ -1,0 +1,298 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html {
+	height: 105%;
+}
+
+body {
+	height: 110%;
+	margin: 0px;
+	background-image: url("pattern.png");
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+#wrapper {
+	display: block;
+	margin: auto;
+	height: 105%;
+	width: 90%;
+	max-width: 800px;
+	color: #fff;
+	text-align: center;
+}
+
+#skH1 {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 5px;
+}
+
+#playersSection {
+	text-align: center;
+}
+
+.btn {
+  border: 3px solid #fff;  
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px 16px;  
+  width: 10px;
+  margin: 0px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  /* Makes "btn" text non-selectable */    
+  cursor: pointer;
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+/*.btn:nth-child(5) {
+	padding-left: 12px;
+	padding-right: 22px;
+}*/
+
+.btn-selected {
+  background-color: #fff;
+  color: #129793;
+}
+
+input {
+	font-size: 20px;
+	margin: 5px;
+	width: 170px;
+}
+
+#pg1Submit {
+  border: 3px solid #fff;  
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px 16px;  
+  width: 101px;
+  margin: 0px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: .4s;
+  transition: .4s;
+  /* Makes "btn" text non-selectable */    
+  cursor: pointer;
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+#pg1Submit:hover {
+  background-color: #fff;
+  color: #129793;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.unlinkify {
+  text-decoration: none;
+  color: inherit;
+}
+
+#scoreTable {
+	display: block;
+	margin: auto;
+	width: 265px;
+	font-size: 20px;
+}
+
+#scoreTable th {
+	font-weight: bold;
+	text-align: left;
+	text-decoration: underline;
+}
+
+#scoreTable tr td:first-child {
+	width: 150px;
+	text-align: left;
+}
+
+#scoreTable tr td:nth-child(2) {
+	width: 50px;
+}
+
+#scoreTable tr td:nth-child(3) {
+	width: 53px;
+	text-align: left;
+}
+
+.scoreBtn {
+  border: 2px solid #fff;  
+  border-radius: 10px;
+  text-align: center;
+  padding: 6px 6px;  
+  width: 40px;
+  margin: 0px;
+  display: inline-block;
+  font-size: 20px;
+  /* Makes "btn" text non-selectable */    
+  cursor: pointer;
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+.scoreBtn:hover {
+  background-color: #fff;
+  color: #129793;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#pg2Submit {
+  border: 2px solid #fff;  
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px 16px;  
+  width: 101px;
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  /* Makes "btn" text non-selectable */    
+  cursor: pointer;
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+#pg2Submit:hover {
+  background-color: #fff;
+  color: #129793;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.active {
+	font-weight: bold;
+}
+
+#hist {
+  width: 265px;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+}
+
+#pg3 h3 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#hist tr {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#hist tr .histName {
+  width: 142.4px;
+  }
+
+#hist tr .histScore {
+  text-align: center;
+  width: 66px;
+}
+
+/* Link that appears after history is 11 scores in length */
+#seeFullHist {
+  text-align: center;
+}
+
+a {
+  color: #F9F4DE;
+  font-size: 17px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* History Page */
+#fullHistory {
+  width: 225px;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+}
+
+#pg4 h3 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#fullHistory tr {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#fullHistory tr .histName {
+  width: 142.4px;
+  }
+
+#fullHistory tr .histScore {
+  text-align: right;
+  width: 66px;
+}
+
+
+@media (min-width: 710px) {
+  #clear {
+    clear: both;
+  }
+
+  #pg2 {
+    float: left;
+    margin: auto;
+    /* Moves footer down below longest History section */
+    min-height: 375px;
+  }
+  
+  #pg3 {
+    float: right;
+    margin: auto;
+  }
+
+  #scoreTable {
+    padding-left: 70px;
+  }
+
+  h3 {
+    margin-top: 0px;
+  }
+
+  #hist tr .histScore {
+    text-align: center;
+  }
+
+  footer {
+    clear: both;
+  }
+}

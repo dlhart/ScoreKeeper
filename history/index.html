@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ScoreKeeper 3.0</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<!-- Google jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- End Google jQuery CDN -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic' rel='stylesheet' type='text/css'>
+	<script>
+		$(function() {
+			changeFullHistory(JSON.parse(localStorage["histNames"]), JSON.parse(localStorage["histScores"]));
+		});
+
+		function changeFullHistory(namesArray, scoresArray) {
+			// Delete Current History
+			$('#fullHistory').html('');
+
+			// Create tr for each name and score up to 10 rows
+			for (var i = 0; i < namesArray.length; i++) {
+			  $('<tr id="hist'+ i +'"><td class="histName">' + namesArray[i] + " " + '</td><td class="histScore">' + scoresArray[i] +'</td></tr>').appendTo('#fullHistory');
+			  // Sets color of each history row (red, green, white)
+			  if (scoresArray[i] < 0) {
+			 	$('#hist' + i).css("color", "#C41535"); // red [or #F9F62C yellow]
+			  }
+			  else if (scoresArray[i] > 0) {
+			 	$('#hist' + i).css("color", "#345E38");  // green [or #505050 grey]
+			  }; 
+			};
+		};
+
+		function back() {
+			window.location.href = "../index.html";
+		}
+
+	</script>
+	<style type="text/css">
+		#x {
+			display: inline-block;  
+			width: 26px; 
+			height: 26px; 
+			margin-left: 90px; 
+			border: 2px solid #fff; 
+			/*background-color: #fff; */
+			color: #fff; 
+			font-size: 18px; 
+			cursor: pointer;
+			border-radius: 7px;
+			transition: all 0.4s ease;
+		}
+		#x:hover {
+			color: #129793;
+			background-color: #fff;
+			transition: all 0.4s ease;
+		}
+	</style>
+</head>
+<body>
+<section id="wrapper">
+  <br>
+  <img src="../scoreKeeperEven.png">
+  <div id="clear">
+	<article id="pg4">
+		
+		<h3 style="Display: inline-block">Full History</h3>
+		<p id="x" onclick="back()">&#10006;</p>
+		
+		<div id="fullHistory">
+
+		</div>
+	</article>
+	<footer>
+	<br/><br><hr><br>
+	<a href="http://designsrdu.com" style="margin: auto;"><img src="../sponsoredLogo.png" style="width: 150px; height: auto;" id="logo"></a>
+	</footer>
+  </div>
+</section>
+</body>
+</html>
